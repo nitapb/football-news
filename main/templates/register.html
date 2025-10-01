@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% block meta %}
 <title>Register - Football News</title>
 {% endblock meta %}
@@ -13,6 +12,12 @@
         <h2 class="text-2xl font-semibold text-gray-900 mb-2">Join Us</h2>
         <p class="text-gray-500">Create your Football News account</p>
       </div>
+
+      <button
+        onclick="showToast('Sample Title', 'This is a sample message for the toast notification.')"
+    >
+        Click to Show Toast
+    </button>
 
       <!-- Form Errors Display -->
       {% if form.non_field_errors %}
